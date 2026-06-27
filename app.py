@@ -31,7 +31,7 @@ input_data = pd.DataFrame({
 })
 
 #scale the input data
-input_data_scaled = scaler.transform(input_data)    \
+input_data_scaled = scaler.transform(input_data)
 
 #make prediction using the KMeans model
 if st.button("Predict Cluster"):
@@ -58,4 +58,3 @@ if st.button("Predict Cluster"):
         st.write("The customer belongs to Cluster 9: Send referral program promotions.")
 else:
     st.write("General Marketing")
-    
